@@ -4,6 +4,7 @@ A message flow browser for Pharo written by T. Bergmann (Astares) in 2018 / 2019
 
 # Quick Start
 ## Installation
+
 ```Smalltalk
 Metacello new 
 	repository: 'github://astares/Pharo-MessageFlowBrowser/src';
@@ -13,4 +14,6 @@ Metacello new
 
 ## Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DRd_bzGocQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Watch the video](https://img.youtube.com/vi/DRd_bzGocQg/hqdefault.jpg)](https://youtu.be/DRd_bzGocQg)
+
+ 
