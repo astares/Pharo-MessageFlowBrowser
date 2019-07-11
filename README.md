@@ -11,6 +11,10 @@ Metacello new
 	baseline: 'MessageFlowBrowser';
 	load
 ```
+## Screnshot
+
+![alt text](doc/screenshot.png "Screenshot")
+
 
 ## Video
 
