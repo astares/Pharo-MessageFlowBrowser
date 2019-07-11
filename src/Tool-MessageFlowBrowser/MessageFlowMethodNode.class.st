@@ -55,7 +55,7 @@ MessageFlowMethodNode >> method: anObject [
 
 { #category : #accessing }
 MessageFlowMethodNode >> name [
-	^self method selector asString, ' (', self method category asString, ')'
+	^self method method printString, ' (', self method category asString, ')'
 ]
 
 { #category : #accessing }
