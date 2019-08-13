@@ -11,7 +11,7 @@ Metacello new
 	baseline: 'MessageFlowBrowser';
 	load
 ```
-## Screnshot
+## Screenshot
 
 ![alt text](doc/screenshot.png "Screenshot")
 
