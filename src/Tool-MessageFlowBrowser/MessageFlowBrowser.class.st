@@ -29,9 +29,7 @@ MessageFlowBrowser class >> elementsMenu: aBuilder [
 	(aBuilder item: #'Message Flow')
 		keyText: 'm, f';
 		action: [ 
-			selectedMethods size = 1 
-				ifTrue: [ MessageFlowBrowser openOn: selectedMethods first ]
-				ifFalse: [ MessageFlowBrowser openOn: (MessageFlowAggregationNode children: (selectedMethods collect: [:each | each asMessageFlowNode ]) name: 'Message Flows') ]].
+			MessageFlowBrowser openOn: (selectedMethods collect: [:each | each asMessageFlowNode ]) ].
 	aBuilder withSeparatorAfter 	
 ]
 
@@ -76,5 +74,5 @@ MessageFlowBrowser class >> openOn: aSymbolOrMethod [
 			 smalltalkClass: [:each | each displaysMethod ifTrue: [ each method methodClass ] ifFalse: [ nil ]];
  			 display: [:each | each sourceCode ]].	
 		
-	^browser openOn: (Array with: aSymbolOrMethod asMessageFlowNode)
+	^browser openOn: (aSymbolOrMethod collect: [ :each | each asMessageFlowNode])
 ]

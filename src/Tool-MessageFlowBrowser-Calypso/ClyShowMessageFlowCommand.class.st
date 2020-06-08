@@ -49,5 +49,5 @@ ClyShowMessageFlowCommand >> defaultMenuItemName [
 { #category : #execution }
 ClyShowMessageFlowCommand >> execute [
 
-	messages do: [:message | MessageFlowBrowser openOn: message contextUser ]
+	MessageFlowBrowser openOn: (messages collect: [:each | each contextUser])
 ]

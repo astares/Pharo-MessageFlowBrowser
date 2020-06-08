@@ -9,5 +9,5 @@ Object >> asMessageFlowNode [
 { #category : #'*Tool-MessageFlowBrowser' }
 Object >> messageFlow [
 
-	^MessageFlowBrowser openOn: self asMessageFlowNode 
+	^MessageFlowBrowser openOn: {self asMessageFlowNode }
 ]
